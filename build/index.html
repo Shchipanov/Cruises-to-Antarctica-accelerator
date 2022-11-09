@@ -6,43 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tуристический проект “Круизы в Антарктику”. Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики.">
     <title>Cruises to Antarctica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body>
     <div class="wrapper">
       <header class="main-header">
-        <nav class="main-nav container">
+        <nav class="main-nav container main-nav--open">
           <a class="logo main-nav__logo">
-            <img class="main-nav__image" src="img/svg/cruises-logo.svg" width="70" height="38" alt="Логотип туристического проекта “Круизы в Антарктику“.">
+            <svg class="main-nav__image" aria-hidden="true" focusable="false" width="70" height="38">
+              <use href="img/sprite.svg#cruises-logo"></use>
+            </svg><span class="visually-hidden">Логотип туристического проекта “Круизы в Антарктику“.</span>
           </a>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#">Преимущества</a>
+              <a class="main-nav__link" href="#">Преимущества</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Направления</a>
+              <a class="main-nav__link"  href="#">Направления</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Ближайшие круизы</a>
+              <a class="main-nav__link"  href="#">Ближайшие круизы</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Контакты</a>
+              <a class="main-nav__link"  href="#">Контакты</a>
             </li>
           </ul>
-          <button class="btn btn--transparent main-nav__toggle" type="button">
-            <svg aria-hidden="true" focusable="false" width="24" height="12">
+          <button class="btn btn--transparent main-nav__btn" type="button">
+            <svg aria-hidden="true" focusable="false" width="24" height="14">
               <use href="img/sprite.svg#burger"></use>
             </svg><span class="visually-hidden">Открыть меню.</span>
           </button>
         </nav>
       </header>
       <main class="main">
-        <section class="main__blok container">
-          <h1 class="visually-hidden">Tуристический проект “Круизы в Антарктику”</h1>
-          <div class="main__block__wrapper">
-            <h2>Круизы в Антарктику</h2>
-            <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
+        <section class="main__block">
+          <div class="main__block__container container">
+            <h1 class="visually-hidden">Tуристический проект “Круизы в Антарктику”</h1>
+            <div class="main__block__wrapper">
+              <h2>Круизы в Антарктику</h2>
+              <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
+            </div>
           </div>
         </section>
         <section class="travels">
@@ -304,7 +309,7 @@
         <section class="contacts">
           <h2 class="visually-hidden">Контактная информация</h2>
           <div class="contacts__container container">
-            <div class="contacts__wrapper">
+            <!-- <div class="contacts__wrapper">
               <div class="contacts__map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002699!2d30.32085871554306!3d59.93871916905485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1667975408890!5m2!1sru!2sru" width="560" height="306" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
@@ -320,7 +325,7 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
       </main>
