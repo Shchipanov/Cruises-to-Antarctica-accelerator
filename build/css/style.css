@@ -822,6 +822,7 @@ button,
 .main-nav__logo {
   width: 70px;
   height: 38px;
+  cursor: pointer;
 }
 
 .main-nav__logo:hover .main-nav__image {
@@ -1002,8 +1003,21 @@ button,
   .main-nav__btn {
     display: block;
     position: absolute;
-    right: -5px;
+    right: 3px;
     top: 13px;
+    padding: 10px 12px;
+  }
+
+  .main-nav__btn:hover {
+    opacity: 0.5;
+  }
+
+  .main-nav__btn:active {
+    background-color: #4772ac;
+  }
+
+  .main-nav__btn:focus-visible {
+    outline: none;
   }
 
   .main-nav__btn::before {
@@ -1013,15 +1027,15 @@ button,
     background-color: #f9fbfd;
     background-repeat: no-repeat;
     background-position: center;
-    width: 13px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
     display: none;
-    right: 13px;
-    top: 13px;
+    right: 19px;
+    top: 11px;
   }
 
-  .main-nav--open {
-    min-height: 459px;
+  .main-nav--opened {
+    min-height: 568px;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -1032,7 +1046,7 @@ button,
     background-color: #f9fbfd;
   }
 
-  .main-nav--open::before {
+  .main-nav--opened::before {
     position: absolute;
     content: "";
     top: 0;
@@ -1043,7 +1057,7 @@ button,
     z-index: -1;
   }
 
-  .main-nav--open .main-nav__list {
+  .main-nav--opened .main-nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1054,28 +1068,40 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    gap: 10px;
+    gap: 26px;
     position: absolute;
-    left: 12px;
-    top: 64px;
+    left: 15px;
+    top: 84px;
   }
 
-  .main-nav--open .main-nav__btn svg {
+  .main-nav--opened .main-nav__logo {
+    margin-left: -1px;
+  }
+
+  .main-nav--opened .main-nav__btn {
+    padding: 19px 26px;
+  }
+
+  .main-nav--opened .main-nav__btn svg {
     display: none;
   }
 
-  .main-nav--open .main-nav__btn::before {
+  .main-nav--opened .main-nav__btn::before {
     display: block;
   }
 
-  .main-nav--open .main-nav__link {
+  .main-nav--opened .main-nav__btn:focus-visible {
+    background-color: #4772ac;
+  }
+
+  .main-nav--opened .main-nav__link {
     font-size: 18px;
     line-height: 22px;
     color: #011c40;
     padding: 10px 0 8px 10px;
   }
 
-  .main-nav--open .main-nav__image {
+  .main-nav--opened .main-nav__image {
     fill: #011c40;
   }
 }
