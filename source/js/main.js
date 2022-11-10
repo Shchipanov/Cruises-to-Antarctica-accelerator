@@ -5,7 +5,6 @@ import {getMenu} from './modules/get-menu';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-
   // Utils
   // ---------------------------------
 

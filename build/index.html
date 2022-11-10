@@ -13,7 +13,7 @@
   <body>
     <div class="wrapper">
       <header class="main-header">
-        <nav class="main-nav container" data-menu="main-nav">
+        <nav class="main-nav container main-nav--nojs" data-menu="main-nav">
           <a class="logo main-nav__logo">
             <svg class="main-nav__image" aria-hidden="true" focusable="false" width="70" height="38">
               <use href="img/sprite.svg#cruises-logo"></use>
@@ -330,23 +330,25 @@
         </section>
       </main>
       <footer class="main-footer">
-        <div class="main-footer__containet container">
+        <div class="main-footer__container container">
           <div class="main-footer__wrapper">
-            <a class="logo main-footer__logo">
-              <!-- <img class="main-footer__image" src="img/svg/cruises-logo.svg" width="70" height="38" alt="Логотип туристического проекта “Круизы в Антарктику“."> -->
-            </a>
+          <a class="logo main-footer__logo">
+            <svg class="main-footer__image" aria-hidden="true" focusable="false" width="70" height="38">
+              <use href="img/sprite.svg#cruises-logo"></use>
+            </svg><span class="visually-hidden">Логотип туристического проекта “Круизы в Антарктику“.</span>
+          </a>
             <ul class="main-footer__list">
               <li class="main-footer__item">
-                <a href="#">Преимущества</a>
+                <a class="main-footer__link" href="#">Преимущества</a>
               </li>
               <li class="main-footer__item">
-                <a href="#">Направления</a>
+                <a class="main-footer__link" href="#">Направления</a>
               </li>
               <li class="main-footer__item">
-                <a href="#">Ближайшие круизы</a>
+                <a class="main-footer__link"  href="#">Ближайшие круизы</a>
               </li>
               <li class="main-footer__item">
-                <a href="#">Контакты</a>
+                <a class="main-footer__link"  href="#">Контакты</a>
               </li>
             </ul>
           </div>
