@@ -164,7 +164,7 @@
   }
 }
 
-.main-nav--opened .main-nav__btn + svg {
+.main-nav--opened .main-nav__btn > svg {
   @include vp-767 {
     display: none;
   }
