@@ -16,10 +16,15 @@
   color: $color-tangaroa;
   padding: 85px 0 49px 0;
 
-   @include vp-1023 {
+  @include vp-1023 {
     font-size: 26px;
     padding: 89px 0 49px 0;
-   }
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    padding: 57px 0 30px;
+  }
 }
 
 .cruises__list {
@@ -32,6 +37,12 @@
 
   @include vp-1023 {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0 8px 0;
   }
 }
 
@@ -54,6 +65,16 @@
   max-height: 368px;
   max-width: 260px;
   padding: 30px 52px 23px 30px;
+
+  @include vp-1023 {
+    padding: 35px 96px 27px 35px;
+    max-width: 309px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    padding: 25px 68px 17px 25px;
+  }
 }
 
 .cruises__item h3 {
@@ -71,6 +92,14 @@
   padding: 28px 25px 35px 25px;
   align-items: flex-start;
   flex-direction: column;
+
+  @include vp-1023 {
+    padding: 29px 35px 33px;
+  }
+
+  @include vp-767 {
+    padding: 29px 26px 33px;
+  }
 }
 
 .cruises__item:hover h3 {

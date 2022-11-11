@@ -1567,6 +1567,15 @@ button,
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .cruises__item {
+    padding: 35px 96px 27px 35px;
+    max-width: 309px;
+  }
+
+  .cruises__item:hover {
+    padding: 29px 35px 33px;
+  }
+
   .cruises__item-1,
   .cruises__item-2 {
     background-image: url("../img/background/cruise-1-tablet.jpg");
@@ -1936,6 +1945,27 @@ button,
 
   .features__item-boat h3 {
     margin: 0 0 13px;
+  }
+
+  .cruises h2 {
+    font-size: 24px;
+    padding: 57px 0 30px;
+  }
+
+  .cruises__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0 8px 0;
+  }
+
+  .cruises__item {
+    max-width: 100%;
+    padding: 25px 68px 17px 25px;
+  }
+
+  .cruises__item:hover {
+    padding: 29px 26px 33px;
   }
 
   .cruises__item-1,
