@@ -1291,6 +1291,15 @@ button,
   background-color: #a0bce1;
 }
 
+.cruises__item:hover .cruises__btn:active {
+  background-color: #a0bce1;
+}
+
+.cruises__item:hover .cruises__btn:focus {
+  outline: none;
+  background-color: #a0bce1;
+}
+
 .cruises__image {
   display: block;
   width: auto;
@@ -1506,14 +1515,24 @@ button,
   .cruises__list {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+    padding: 0 14px 0;
+    width: 100%;
   }
 
-  .cruises__item {
-    padding: 35px 35px 27px 35px;
+  .cruises__item h3 {
+    left: 35px;
+    bottom: 26px;
   }
 
-  .cruises__item:hover {
+  .cruises__item:hover .cruises__discription {
     padding: 29px 35px 33px;
+  }
+
+  .cruises__image {
+    width: 100%;
+    max-height: 386px;
+    -o-object-position: 0 0;
+    object-position: 0 0;
   }
 }
 
@@ -1837,17 +1856,16 @@ button,
   .cruises__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    width: 100%;
     padding: 0 8px 0;
   }
 
-  .cruises__item {
-    max-width: 100%;
-    padding: 25px 25px 17px 25px;
+  .cruises__item h3 {
+    left: 26px;
+    bottom: 17px;
   }
 
-  .cruises__item:hover {
-    padding: 29px 26px 33px;
+  .cruises__item:hover .cruises__discription {
+    padding: 29px 25px 17px 25px;
   }
 }
 
