@@ -28,7 +28,7 @@
 }
 
 .cruises__list {
-  margin: 0 0 100px 0;
+  margin: 0 0 120px 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -150,12 +150,19 @@
   }
 
   &:active {
-    background-color: $color-light-steel-blue;
+    background-color: $color-alice-blue;
+    outline: 2px solid $color-light-steel-blue;
+    outline-offset: -2px;
   }
 
   &:focus {
-    outline: none;
     background-color: $color-light-steel-blue;
+    outline: none;
+  }
+
+  &:disabled {
+    color: $color-quartz;
+    background-color: $color-grey-suit;
   }
 }
 
