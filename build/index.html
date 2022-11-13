@@ -345,21 +345,23 @@
           <div class="booking__container container">
             <div class="booking__description">
               <h2>Раннее бронирование</h2>
-              <p>Забронируйте тур за&nbsp;3-6 месяцев
+              <p>Забронируйте тур<br> за&nbsp;3-6 месяцев
               до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
             </div>
             <div class="booking__form">
               <form method="post" action="https://echo.htmlacademy.ru" enctype="multipart/form-data" autocomplete="off">
                 <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
-                <label for="name">
-                  <input type="text" name="your-name" placeholder="Имя" pattern="^[a-zA-ZA-Яа-яЁё]+$" id="name" required>
-                </label>
-                <label for="phone">
-                  <input type="tel" id="phone" name="your-phone" placeholder="Телефон" data-phone minlength="10" pattern="\8\[0-9]{3}\[0-9]{3}[0-9]{2}[0-9]{2}" required>
-                </label>
-                <label for="email">
-                  <input type="email" id="email" name="email" placeholder="Email" required>
-                </label>
+                <div class="booking__input-wrapper">
+                  <label for="name">
+                    <input type="text" name="your-name" placeholder="Имя" pattern="^[a-zA-ZA-Яа-яЁё]+$" id="name" required>
+                  </label>
+                  <label for="phone">
+                    <input type="tel" id="phone" name="your-phone" placeholder="Телефон" data-phone minlength="10" pattern="\8\[0-9]{3}\[0-9]{3}[0-9]{2}[0-9]{2}" required>
+                  </label>
+                  <label for="email">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                  </label>
+                </div>
                 <label class="booking__checkbox" for="agreement">
                   <input class="visually-hidden booking__checkbox-input" type="checkbox" id="agreement" name="agreement" required>
                   <span class="booking__control-mark"></span>

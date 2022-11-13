@@ -1336,8 +1336,14 @@ button,
   justify-content: space-around;
 }
 
+.booking__description {
+  margin: 0 0 8px -9px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .booking__description h2 {
-  margin: 0 0 30px 0;
+  margin: 0 0 7px 0;
   font-family: "montserrat", "Arial", sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -1348,8 +1354,6 @@ button,
 .booking__description p {
   margin: 0;
   max-width: 353px;
-  display: inline-block;
-  vertical-align: middle;
   font-family: "montserrat", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -1357,9 +1361,13 @@ button,
   color: #011c40;
 }
 
+.booking__description p > br {
+  display: none;
+}
+
 .booking__form {
-  padding: 50px 50px;
-  margin: 50px 0;
+  padding: 43px 50px 51px;
+  margin: 50px -11px 50px 0;
   max-width: 403px;
   background-color: #011c40;
   -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
@@ -1381,7 +1389,7 @@ button,
 }
 
 .booking__form h3 {
-  margin: 0 0 35px 0;
+  margin: 0 0 28px 0;
   font-family: "montserrat", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -1468,13 +1476,13 @@ button,
 
 .booking__checkbox {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .booking__control-span {
-  margin: 8px 0 35px 25px;
+  margin: 2px 0 34px 23px;
   font-family: "montserrat", "Arial", sans-serif;
   font-weight: 400;
   font-size: 10px;
@@ -1489,13 +1497,15 @@ button,
   width: 18px;
   height: 18px;
   background-color: #f9fbfd;
-  top: 7px;
+  top: 0;
   left: 0;
   cursor: pointer;
 }
 
 .booking__control-mark:hover {
-  background-color: #a0bce1;
+  background-color: #f9fbfd;
+  outline: 2px solid #a0bce1;
+  outline-offset: -2px;
 }
 
 .booking__control-mark:active {
@@ -1563,8 +1573,9 @@ button,
 }
 
 .booking__checkbox-input[type=checkbox]:focus + .booking__control-mark {
-  background-color: #a0bce1;
-  outline: none;
+  background-color: #f9fbfd;
+  outline: 2px solid #a0bce1;
+  outline-offset: -2px;
 }
 
 /* @mixin hover-focus {
@@ -1778,6 +1789,7 @@ button,
   }
 
   .cruises__list {
+    margin: 0 0 101px 0;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     padding: 0 14px 0;
@@ -1802,6 +1814,31 @@ button,
 
   .booking {
     background-image: url("../img/background/booking-tablet.jpg");
+  }
+
+  .booking__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .booking__description {
+    margin: 88px 0 50px 0;
+    text-align: center;
+  }
+
+  .booking__description h2 {
+    font-size: 34px;
+  }
+
+  .booking__description p {
+    font-size: 18px;
+    margin: 0 auto;
+  }
+
+  .booking__form {
+    margin: 0 0 100px 0;
   }
 }
 
@@ -2127,6 +2164,7 @@ button,
   }
 
   .cruises__list {
+    margin: 0 0 66px 0;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     padding: 0 8px 0;
@@ -2143,6 +2181,51 @@ button,
 
   .booking {
     background-image: url("../img/background/booking-mobile.jpg");
+  }
+
+  .booking__description {
+    margin: 58px 0 34px 0;
+  }
+
+  .booking__description h2 {
+    font-size: 24px;
+    line-height: 130%;
+    margin: 0 0 13px 0;
+  }
+
+  .booking__description p {
+    font-size: 16px;
+    line-height: 140%;
+    max-width: 278px;
+  }
+
+  .booking__description p > br {
+    display: block;
+  }
+
+  .booking__form {
+    padding: 34px 29px 40px;
+    margin: 0 0 66px 0;
+  }
+
+  .booking__form h3 {
+    line-height: 140%;
+    text-align: center;
+  }
+
+  .booking__control-span {
+    margin: -2px 0 27px 28px;
+    max-width: 156px;
+  }
+
+  .booking__control-mark {
+    width: 20px;
+    height: 20px;
+  }
+
+  .booking__checkbox-input[type=checkbox]:checked + .booking__control-mark::before {
+    left: 4px;
+    top: 6px;
   }
 }
 
