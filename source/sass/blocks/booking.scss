@@ -5,7 +5,6 @@
   background-image: url("../img/background/booking-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: $color-shadow;
 
   @media (min-width: $vp-1024) {
     @include retina {
