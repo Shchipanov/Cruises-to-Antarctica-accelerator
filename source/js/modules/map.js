@@ -34,21 +34,21 @@
 // window.initMap = initMap;
 
 
-function initMap() {
-  let coordinates = {lat: 47.212325, lng: 38.933663};
-  // eslint-disable-next-line no-undef
-  let map = new google.maps.Map(document.querySelector('.map'), {
-    center: coordinates,
-  });
+// function initMap() {
+//   let coordinates = {lat: 47.212325, lng: 38.933663};
+//   // eslint-disable-next-line no-undef
+//   let map = new google.maps.Map(document.querySelector('.map'), {
+//     center: coordinates,
+//   });
 
-  const image = 'images/marker.png';
+//   const image = 'images/marker.png';
 
-  // eslint-disable-next-line no-undef
-  marker = new google.maps.Marker({
-    position: coordinates,
-    map,
-    icon: image,
-  });
-}
+//   // eslint-disable-next-line no-undef
+//   marker = new google.maps.Marker({
+//     position: coordinates,
+//     map,
+//     icon: image,
+//   });
+// }
 
-export {initMap};
+// export {initMap};

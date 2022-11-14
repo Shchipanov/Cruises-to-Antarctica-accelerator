@@ -10,18 +10,18 @@ function getMask() {
         return '8';
       }
       if (str === '9') {
-        return '89';
+        return '8';
       }
       return '89';
     };
 
     inputs.forEach((input) =>
       input.addEventListener('input', () => {
-        const value = input.value.replace(/\D+/g, '');
+        const value = input.value.replace(/\D/g, '');
         const numberLength = 11;
 
         let result;
-        if (input.value.includes('+8') || input.value[0] === '8') {
+        if (input.value.includes('8') || input.value[0] === '8') {
           result = '';
         } else {
           result = '';
