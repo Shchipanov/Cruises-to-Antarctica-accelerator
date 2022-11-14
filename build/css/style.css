@@ -1624,6 +1624,27 @@ button,
   top: 0;
 }
 
+.contacts__map--not-js {
+  padding-bottom: 0;
+  height: 100%;
+  position: relative;
+}
+
+.contacts__map--not-js::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/sprite/address.svg");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 22px;
+  left: 45%;
+  bottom: 23%;
+}
+
+.contacts__map--not-js .contacts__image {
+  height: 100%;
+}
+
 .contacts__data {
   display: inline-block;
   vertical-align: middle;
@@ -1969,6 +1990,15 @@ button,
 
   .contacts__map {
     padding-bottom: 50%;
+  }
+
+  .contacts__map--not-js {
+    padding-bottom: 0;
+    height: 335px;
+  }
+
+  .contacts__map--not-js::before {
+    left: 40%;
   }
 
   .contacts__data p {
@@ -2390,6 +2420,11 @@ button,
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
+  }
+
+  .contacts__map--not-js {
+    padding-bottom: 0;
+    height: 314px;
   }
 
   .contacts__data {
