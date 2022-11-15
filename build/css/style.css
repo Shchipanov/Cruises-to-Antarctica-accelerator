@@ -1049,8 +1049,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1170,11 +1168,7 @@ button,
   color: #011c40;
 }
 
-.features__item-ticks h3 br {
-  display: none;
-}
-
-.features__item-boat p br {
+.features__item-ticks h3 > br {
   display: none;
 }
 
@@ -1253,7 +1247,7 @@ button,
   bottom: 0;
   right: 0;
   background-color: #011c40;
-  padding: 69px 25px 30px 25px;
+  padding: 29px 25px 30px 25px;
   overflow: auto;
   opacity: 0;
   z-index: -1;
@@ -1262,9 +1256,15 @@ button,
 .cruises__item:hover h3,
 .cruises__item:active h3,
 .cruises__item:focus-within h3 {
-  top: 28px;
-  z-index: 2;
-  left: 25px;
+  display: none;
+}
+
+.cruises__item:hover .cruises__description > h3,
+.cruises__item:active .cruises__description > h3,
+.cruises__item:focus-within .cruises__description > h3 {
+  display: block;
+  position: initial;
+  margin: 0 0 13px 0;
 }
 
 .cruises__description .cruises__sub-list {
@@ -1903,20 +1903,16 @@ button,
     height: 26px;
   }
 
-  .features__item-ticks h3 br {
+  .features__item-ticks h3 > br {
     display: block;
   }
 
-  .features__item-ticks p br {
+  .features__item-ticks p > br {
     display: none;
   }
 
   .features__item-boat h3 {
     margin: 0 0 20px;
-  }
-
-  .features__item-boat p br {
-    display: block;
   }
 
   .cruises h2 {
@@ -1938,14 +1934,7 @@ button,
   }
 
   .cruises__description {
-    padding: 70px 35px 33px;
-  }
-
-  .cruises__item:hover h3,
-  .cruises__item:active h3,
-  .cruises__item:focus-within h3 {
-    top: 29px;
-    left: 35px;
+    padding: 29px 35px 33px;
   }
 
   .cruises__image {
@@ -2348,13 +2337,7 @@ button,
   }
 
   .cruises__description {
-    padding: 70px 25px 17px 25px;
-  }
-
-  .cruises__item:hover h3,
-  .cruises__item:active h3,
-  .cruises__item:focus-within h3 {
-    left: 26px;
+    padding: 29px 25px 17px 25px;
   }
 
   .booking {
