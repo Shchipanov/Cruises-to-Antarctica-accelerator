@@ -82,7 +82,7 @@
 }
 
 .travels__image img {
-   @include vp-767 {
+  @include vp-767 {
     width: 100%;
-   }
+  }
 }

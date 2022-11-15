@@ -1,7 +1,7 @@
 let navMain = document.querySelector('[data-menu="main-nav"]');
 let navToggle = document.querySelector('[data-menu="btn"]');
 
-navMain.classList.remove('main-nav--nojs');
+navMain.classList.remove('main-nav--not-js');
 
 const getMenu = function () {
   if (!navMain) {
@@ -14,4 +14,3 @@ const getMenu = function () {
 };
 
 export {getMenu};
-

@@ -806,8 +806,8 @@ button,
   background-image: url("../img/background/main-background-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .main__block__wrapper {
@@ -824,7 +824,7 @@ button,
   font-size: 54px;
   line-height: 66px;
   color: #f9fbfd;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .main__block__wrapper p {
@@ -835,7 +835,7 @@ button,
   font-size: 20px;
   line-height: 24px;
   color: #f9fbfd;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .main-nav {
@@ -1385,8 +1385,8 @@ button,
   margin: 50px -11px 50px 0;
   max-width: 403px;
   background-color: #011c40;
-  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
 }
 
 .booking__form form {
