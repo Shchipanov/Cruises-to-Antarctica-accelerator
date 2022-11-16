@@ -721,7 +721,7 @@ button,
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.main-nav {
+.main-nav__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -793,9 +793,23 @@ button,
   top: 0;
   right: 0;
   bottom: 0;
-  left: -35px;
+  left: 0;
   background-color: rgba(0, 43, 102, 0.5);
   display: none;
+}
+
+.main-nav--opened .main-nav__wrapper {
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 35px;
+  background-color: #f9fbfd;
+  overflow: auto;
+  overflow-x: hidden;
+  padding-left: 15px;
+  display: block;
 }
 
 .main-nav--not-js .main-nav__image {
@@ -1610,6 +1624,10 @@ button,
   left: 0;
 }
 
+.page--no-scroll {
+  overflow: hidden;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1693,7 +1711,7 @@ button,
     line-height: 22px;
   }
 
-  .main-nav {
+  .main-nav__wrapper {
     padding-top: 28px;
   }
 
@@ -1922,6 +1940,10 @@ button,
     background-image: url("../img/background/main-background-mobile.jpg");
   }
 
+  .main-header__title {
+    z-index: 0;
+  }
+
   .main-header__title-wrapper {
     padding: 134px 0 178px;
   }
@@ -1947,6 +1969,10 @@ button,
   }
 
   .main-nav {
+    z-index: 2;
+  }
+
+  .main-nav__wrapper {
     padding-top: 20px;
   }
 
@@ -1988,48 +2014,27 @@ button,
     top: 11px;
   }
 
-  .main-nav--opened {
-    min-height: 568px;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    left: 35px;
-    background-color: #f9fbfd;
-  }
-
   .main-nav--opened .main-nav__background {
     display: block;
-    z-index: -1;
+    z-index: 0;
   }
 
   .main-nav--opened .main-nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    gap: 26px;
-    position: absolute;
-    left: 15px;
-    top: 84px;
+    display: block;
+  }
+
+  .main-nav--opened .main-nav__item {
+    display: block;
+    margin: 0 0 26px 0;
   }
 
   .main-nav--opened .main-nav__logo {
-    margin-left: -1px;
+    margin: 0 0 42px 0;
   }
 
   .main-nav--opened .main-nav__btn {
     padding: 19px 24px;
-    right: 30px;
+    right: -4px;
   }
 
   .main-nav--opened .main-nav__btn > svg {

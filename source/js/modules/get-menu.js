@@ -1,3 +1,6 @@
+import {removeScroll} from './no-scroll';
+// import {closedMenu} from './close-menu';
+
 let navMain = document.querySelector('[data-menu="main-nav"]');
 let navToggle = document.querySelector('[data-menu="btn"]');
 let headerTile = document.querySelector('[data-header-title]');
@@ -15,7 +18,10 @@ const getMenu = function () {
     }
     navToggle.addEventListener('click', function () {
       navMain.classList.toggle('main-nav--opened');
+
       headerTile.classList.toggle('main-header__title-wrapper--closed');
+
+      removeScroll();
     });
   }
 };

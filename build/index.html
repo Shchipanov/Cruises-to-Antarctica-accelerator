@@ -12,45 +12,46 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
-  <body>
+  <body data-body-scroll>
     <div class="wrapper">
       <header class="main-header">
+        <nav class="main-nav container main-nav--not-js" data-menu="main-nav">
+          <div class="main-nav__background" data-nav-background></div>
+          <div class="main-nav__wrapper">
+            <a class="logo main-nav__logo">
+              <svg class="main-nav__image" aria-hidden="true" focusable="false" width="70" height="38">
+                <use href="img/sprite.svg#cruises-logo"></use>
+              </svg><span class="visually-hidden">Логотип туристического проекта “Круизы в Антарктику“.</span>
+            </a>
+            <ul class="main-nav__list">
+              <li class="main-nav__item" >
+                <a class="main-nav__link" href="#features" data-nav-link>Преимущества</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#" data-nav-link>Направления</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#cruises" data-nav-link>Ближайшие круизы</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#contacts" data-nav-link>Контакты</a>
+              </li>
+            </ul>
+            <button class="btn btn--transparent main-nav__btn" type="button" data-menu="btn">
+              <svg aria-hidden="true" focusable="false" width="24" height="14">
+                <use href="img/sprite.svg#burger"></use>
+              </svg><span class="visually-hidden">Открыть меню.</span>
+            </button>
+          </div>
+        </nav>
+        <section class="main-header__title container">
+          <h1 class="visually-hidden">Tуристический проект “Круизы в Антарктику”</h1>
+          <div class="main-header__title-wrapper" data-header-title>
+            <h2>Круизы в&nbsp;Антарктику</h2>
+            <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
+          </div>
+        </section>
 
-          <nav class="main-nav container main-nav--not-js" data-menu="main-nav">
-            <div class="main-nav__background"></div>
-              <a class="logo main-nav__logo">
-                <svg class="main-nav__image" aria-hidden="true" focusable="false" width="70" height="38">
-                  <use href="img/sprite.svg#cruises-logo"></use>
-                </svg><span class="visually-hidden">Логотип туристического проекта “Круизы в Антарктику“.</span>
-              </a>
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="#features">Преимущества</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">Направления</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="#cruises">Ближайшие круизы</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="#contacts">Контакты</a>
-                </li>
-              </ul>
-              <button class="btn btn--transparent main-nav__btn" type="button" data-menu="btn">
-                <svg aria-hidden="true" focusable="false" width="24" height="14">
-                  <use href="img/sprite.svg#burger"></use>
-                </svg><span class="visually-hidden">Открыть меню.</span>
-              </button>
-
-          </nav>
-          <section class="main-header__title container">
-            <h1 class="visually-hidden">Tуристический проект “Круизы в Антарктику”</h1>
-            <div class="main-header__title-wrapper" data-header-title>
-              <h2>Круизы в&nbsp;Антарктику</h2>
-              <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
-            </div>
-          </section>
 
 
 

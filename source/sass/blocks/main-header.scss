@@ -37,6 +37,12 @@
   }
 }
 
+.main-header__title {
+  @include vp-767 {
+    z-index: 0;
+  }
+}
+
 .main-header__title-wrapper {
   display: inline-block;
   vertical-align: middle;
