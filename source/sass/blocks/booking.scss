@@ -248,8 +248,7 @@
   }
 }
 
-.booking__checkbox-input[type="checkbox"]:checked
-  + .booking__control-mark::before {
+.booking__checkbox-input[type="checkbox"]:checked + .booking__control-mark::before {
   position: absolute;
   content: "";
   background-image: url("../img/svg/checkbox.svg");
@@ -296,8 +295,7 @@
   }
 }
 
-.booking__checkbox-input[type="checkbox"]:checked:active
-  + .booking__control-mark::before {
+.booking__checkbox-input[type="checkbox"]:checked:active + .booking__control-mark::before {
   background-color: $color-alice-blue;
   outline: 2px solid $color-light-steel-blue;
   outline-offset: -2px;

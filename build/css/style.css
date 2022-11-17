@@ -1593,16 +1593,16 @@ button,
 }
 
 .contacts__link:hover {
-  background-color: #a0bce1;
+  color: #8c8c94;
 }
 
 .contacts__link:active {
-  background-color: #a0bce1;
+  color: #8c8c94;
 }
 
 .contacts__link:focus {
   outline: none;
-  background-color: #a0bce1;
+  color: #8c8c94;
 }
 
 .contacts__link:hover svg,
@@ -2062,10 +2062,14 @@ button,
 
   .main-nav--not-js {
     position: inherit;
+    padding-bottom: 20px;
+    background-color: #f9fbfd;
+  }
+
+  .main-nav--not-js .main-nav__wrapper {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    padding-bottom: 20px;
   }
 
   .main-nav--not-js .main-nav__btn {

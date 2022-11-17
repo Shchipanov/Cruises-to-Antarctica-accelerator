@@ -131,16 +131,16 @@
   color: $color-tangaroa;
 
   &:hover {
-    background-color: $color-light-steel-blue;
+    color: $color-grey-suit;
   }
 
   &:active {
-    background-color: $color-light-steel-blue;
+    color: $color-grey-suit;
   }
 
   &:focus {
     outline: none;
-    background-color: $color-light-steel-blue;
+    color: $color-grey-suit;
   }
 }
 
