@@ -1944,6 +1944,15 @@ button,
     z-index: 0;
   }
 
+  .main-header__title--opened .main-header__title-wrapper {
+    height: 500px;
+  }
+
+  .main-header__title--opened .main-header__title-wrapper > h2,
+  .main-header__title--opened .main-header__title-wrapper > p {
+    font-size: 0;
+  }
+
   .main-header__title-wrapper {
     padding: 134px 0 178px;
   }
@@ -1957,15 +1966,6 @@ button,
     font-size: 16px;
     line-height: 140%;
     max-width: 232px;
-  }
-
-  .main-header__title .main-header__title-wrapper--closed {
-    height: 500px;
-  }
-
-  .main-header__title .main-header__title-wrapper--closed > h2,
-  .main-header__title .main-header__title-wrapper--closed > p {
-    font-size: 0;
   }
 
   .main-nav {

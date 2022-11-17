@@ -43,6 +43,20 @@
   }
 }
 
+.main-header__title--opened .main-header__title-wrapper {
+  @include vp-767 {
+    height: 500px;
+  }
+}
+
+.main-header__title--opened .main-header__title-wrapper > h2,
+.main-header__title--opened .main-header__title-wrapper > p
+{
+  @include vp-767 {
+    font-size: 0;
+  }
+}
+
 .main-header__title-wrapper {
   display: inline-block;
   vertical-align: middle;
@@ -100,15 +114,3 @@
   }
 }
 
-.main-header__title .main-header__title-wrapper--closed {
-  @include vp-767 {
-    height: 500px;
-  }
-}
-
-.main-header__title .main-header__title-wrapper--closed > h2,
-.main-header__title .main-header__title-wrapper--closed > p {
-  @include vp-767 {
-    font-size: 0;
-  }
-}
