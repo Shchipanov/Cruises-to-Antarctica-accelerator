@@ -730,9 +730,9 @@ button,
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding-top: 35px;
 }
 
@@ -760,6 +760,8 @@ button,
   gap: 33px;
   margin: 0 0 0 auto;
   padding: 0;
+  -ms-grid-row-align: center;
+  align-self: center;
   list-style-type: none;
 }
 
@@ -820,7 +822,6 @@ button,
   display: block;
   width: 70px;
   height: 38px;
-  cursor: pointer;
 }
 
 .main-footer {
@@ -834,9 +835,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding-top: 50px;
   padding-bottom: 49px;
 }
@@ -854,6 +855,8 @@ button,
 
 .main-footer__logo {
   margin: 0 40px 0 0;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .main-footer__logo:hover .main-footer__image {
@@ -863,6 +866,15 @@ button,
 .main-footer__logo:active .main-footer__image {
   fill: #000000;
   background-color: #4772ac;
+}
+
+.main-footer__logo:focus .main-footer__image {
+  opacity: 0.5;
+  outline: none;
+}
+
+.main-footer__logo:focus {
+  outline: none;
 }
 
 .main-footer__image {
@@ -907,7 +919,7 @@ button,
 .social {
   display: -ms-grid;
   display: grid;
-  margin: 0;
+  margin: 11px 0 0 0;
   padding: 0;
   list-style: none;
   gap: 27px;
@@ -1233,8 +1245,8 @@ button,
 
 .cruises__image {
   display: block;
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .booking {
@@ -1508,9 +1520,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1561,6 +1573,9 @@ button,
   max-width: 500px;
   width: 100%;
   margin: 14px 0 0 0;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .contacts__data p {
@@ -1718,6 +1733,10 @@ button,
     padding-top: 28px;
   }
 
+  .main-nav__logo {
+    margin-top: 2px;
+  }
+
   .main-nav__list {
     gap: 23px;
   }
@@ -1734,11 +1753,11 @@ button,
 
   .main-footer__container {
     padding-top: 46px;
-    padding-bottom: 50px;
+    padding-bottom: 47px;
   }
 
   .main-footer__logo {
-    margin: 0 25px 0 0;
+    margin: 4px 25px 0 0;
   }
 
   .main-footer__list {
@@ -1751,6 +1770,7 @@ button,
   }
 
   .social {
+    margin: 6px 0 0 0;
     -ms-grid-columns: 11px 16px 16px;
     grid-template-columns: 11px 16px 16px;
     gap: 23px;
@@ -1855,10 +1875,7 @@ button,
   }
 
   .cruises__image {
-    width: 100%;
-    max-height: 386px;
-    -o-object-position: 0 0;
-    object-position: 0 0;
+    aspect-ratio: 309/386;
   }
 
   .booking {
@@ -1920,6 +1937,10 @@ button,
   }
 
   .contacts__link svg {
+    top: 6px;
+  }
+
+  .contacts__link-phone svg {
     top: 3px;
   }
 }
@@ -1983,6 +2004,10 @@ button,
     padding-top: 20px;
   }
 
+  .main-nav__logo {
+    margin-top: 0;
+  }
+
   .main-nav__list {
     display: none;
   }
@@ -2024,6 +2049,7 @@ button,
   .main-nav--opened .main-nav__background {
     display: block;
     z-index: 0;
+    height: 100vh;
   }
 
   .main-nav--opened .main-nav__list {
@@ -2148,6 +2174,7 @@ button,
   }
 
   .social {
+    margin: 0;
     -ms-grid-columns: 10px 16px 16px;
     grid-template-columns: 10px 16px 16px;
     -ms-grid-rows: 16px;
@@ -2246,6 +2273,10 @@ button,
     padding: 29px 25px 17px 25px;
   }
 
+  .cruises__image {
+    aspect-ratio: 270/383;
+  }
+
   .booking {
     background-image: url("../img/background/booking-mobile.jpg");
   }
@@ -2296,7 +2327,7 @@ button,
   }
 
   .contacts {
-    padding: 44px 0 67px 0;
+    padding: 44px 0 68px 0;
   }
 
   .contacts__container {
@@ -2324,7 +2355,7 @@ button,
   }
 
   .contacts__link-phone svg {
-    top: 0;
+    top: 1px;
   }
 }
 
