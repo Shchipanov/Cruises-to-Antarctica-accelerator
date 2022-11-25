@@ -1,11 +1,19 @@
 let bodyScroll = document.querySelector('[data-body-scroll]');
 
-function removeScroll() {
+function addScroll() {
   if (bodyScroll) {
-    bodyScroll.classList.toggle('page--no-scroll');
+    bodyScroll.classList.add('page--no-scroll');
   } else {
     return;
   }
 }
 
-export {removeScroll};
+function removeScroll() {
+  if (bodyScroll) {
+    bodyScroll.classList.remove('page--no-scroll');
+  } else {
+    return;
+  }
+}
+
+export {removeScroll, addScroll};

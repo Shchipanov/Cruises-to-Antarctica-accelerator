@@ -1908,6 +1908,7 @@ button,
 
   .contacts__map {
     padding-bottom: 50%;
+    max-width: 100%;
   }
 
   .contacts__map--not-js {

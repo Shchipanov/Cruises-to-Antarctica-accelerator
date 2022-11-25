@@ -6,22 +6,22 @@ import {removeScroll} from './no-scroll';
 import {hideTile} from './hide-title';
 
 function closedMenu() {
+
   if (navLinks) {
     navLinks.forEach((link) => {
       link.addEventListener('click', () => {
         navMain.classList.remove('main-nav--opened');
         removeScroll();
-        newFunction();
 
-        function newFunction() {
-          hideTile();
-        }
+        hideTile();
       });
     });
   } else {
     return;
   }
+}
 
+function closeBack() {
   if (navBack) {
     navBack.addEventListener('click', (evt) => {
       evt.preventDefault();
@@ -34,4 +34,4 @@ function closedMenu() {
   }
 }
 
-export {closedMenu};
+export {closedMenu, closeBack};

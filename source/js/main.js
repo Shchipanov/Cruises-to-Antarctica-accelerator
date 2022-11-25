@@ -3,6 +3,7 @@ import {getMenu} from './modules/get-menu';
 import {getMask} from './modules/get-mask';
 import {initMap} from './modules/map';
 import {closedMenu} from './modules/close-menu';
+import {closeBack} from './modules/close-menu';
 
 // ---------------------------------
 
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     getMask();
     initMap();
     closedMenu();
+    closeBack();
   });
 });
 

@@ -1,4 +1,4 @@
-import {removeScroll} from './no-scroll';
+import {addScroll} from './no-scroll';
 import {hideTile} from './hide-title';
 
 let navMain = document.querySelector('[data-menu="main-nav"]');
@@ -18,7 +18,7 @@ const getMenu = function () {
     navToggle.addEventListener('click', function () {
       navMain.classList.toggle('main-nav--opened');
       hideTile();
-      removeScroll();
+      addScroll();
     });
   }
 };
